@@ -8,6 +8,6 @@ services:
       - NODE_ENV=production
     volumes:
       - ./:/usr/src/app
-    command: sh -c "cd react-app && npm start"
+    command: sh -c "npx create-react-app react-app && cd react-app && npm start"
     ports:
       - "3000:3000"
